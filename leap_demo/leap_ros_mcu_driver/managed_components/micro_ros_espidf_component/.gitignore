@@ -1,0 +1,8 @@
+# 与 firmware/chassis 保持一致：micro_ros_src 是构建输入，需入库；只忽略构建产物。
+/build/
+/install/
+/micro_ros_dev/
+/micro_ros_src/build/
+/micro_ros_src/install/
+libmicroros.a
+/esp32_toolchain.cmake

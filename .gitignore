@@ -1,0 +1,100 @@
+# Generated/dependency/runtime output, at any project depth
+.git/
+node_modules/
+build/
+install/
+log/
+logs/
+dist/
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.pio/
+.next/
+.nuxt/
+coverage/
+.turbo/
+CMakeFiles/
+.yarn/cache/
+.yarn/unplugged/
+*.o
+*.obj
+*.a
+*.so
+*.elf
+*.bin
+*.log
+*.pid
+*.tsbuildinfo
+*.bag
+*.mcap
+*.db3
+sdkconfig.old
+.bugfix_backup/
+.deploy_backup/
+git_backup/
+# Local credentials must never enter the mirror
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+.npmrc
+.netrc
+.pypirc
+.git-credentials
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+secrets.yaml
+secrets.yml
+secrets.json
+
+# Pinned Lyrical Agent sources and private dependency installation.
+/agent_ws/lyrical-src/
+/agent_ws/.deps/
+# 地图目录入库（保留样例与说明）；运行时新增地图请自行决定是否提交
+
+# These upstream source directories are named log; they are not runtime output.
+!/robot_ws/src/openslam_gmapping/log/
+!/robot_ws/src/openslam_gmapping/log/**
+!/robot_ws/src/openslam_gmapping/include/gmapping/log/
+!/robot_ws/src/openslam_gmapping/include/gmapping/log/**
+!/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_src/src/Micro-XRCE-DDS-Client/src/c/core/log/
+!/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_src/src/Micro-XRCE-DDS-Client/src/c/core/log/**
+
+# 运行期标记（run_manifest 生成，仅表示"正在实车运行"）
+.run-active
+
+# ---- 发布到公共仓库时的额外排除 ----
+# micro-ROS 组件的构建产物与预编译库（ESP-IDF 构建时重新生成）
+/firmware/chassis/managed_components/micro_ros_espidf_component/libmicroros.a
+/firmware/chassis/managed_components/micro_ros_espidf_component/include/
+/firmware/chassis/managed_components/micro_ros_espidf_component/esp32_toolchain.cmake
+/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_src/build/
+/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_src/install/
+/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_dev/build/
+/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_dev/install/
+/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_dev/log/
+# 迁移过程日志与虚拟机镜像
+/migration-tools/*.log
+
+# ---- 公开发布额外排除 ----
+# micro-ROS 组件的构建产物与预编译库（ESP-IDF 构建时重新生成）
+/firmware/chassis/managed_components/micro_ros_espidf_component/libmicroros.a
+/firmware/chassis/managed_components/micro_ros_espidf_component/include/
+/firmware/chassis/managed_components/micro_ros_espidf_component/esp32_toolchain.cmake
+/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_src/build/
+/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_src/install/
+/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_dev/build/
+/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_dev/install/
+/firmware/chassis/managed_components/micro_ros_espidf_component/micro_ros_dev/log/
+# 本地运行标记
+.run-active

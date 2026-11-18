@@ -1,0 +1,11 @@
+<library path="arena_planner">
+  <class name="ldc_navigation::ArenaPlanner"
+         type="ldc_navigation::ArenaPlanner"
+         base_class_type="nav2_core::GlobalPlanner">
+    <description>
+      Cost-aware A* global planner for the two-wheel arena car.
+      Unknown cells blocked by default; no corner cutting; optional
+      collision-constrained gradient smoothing.
+    </description>
+  </class>
+</library>

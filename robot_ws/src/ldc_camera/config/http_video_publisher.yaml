@@ -1,0 +1,19 @@
+http_video_publisher:
+  ros__parameters:
+    # Leave empty to discover the camera over UDP 33333 (firmware discovery).
+    # Set an explicit URL to skip discovery, e.g. "http://192.168.1.50:81/".
+    url: ""
+    discovery: true
+    discovery_port: 33333
+    discovery_timeout: 2.0
+    discovery_broadcast: "255.255.255.255"
+    topic: "/camera/image_raw/compressed"
+    raw_topic: "/camera/image_raw"
+    frame_id: "camera_optical_frame"
+    fps: 30.0
+    reconnect_delay: 2.0
+    use_ffmpeg: true
+    jpeg_quality: 70
+    publish_raw: true
+    calibration_file: ""
+    read_timeout: 2.0

@@ -1,0 +1,32 @@
+frontier_explorer:
+  ros__parameters:
+    map_topic: /map
+    base_frame: base_footprint
+    min_frontier_cells: 4
+    goal_timeout: 30.0
+    idle_stop_seconds: 15.0
+    max_goals: 30
+    blacklist_radius: 0.6
+    blacklist_seconds: 60.0
+    robot_radius: 0.15
+    min_goal_distance: 0.8
+    max_goal_distance: 3.0
+    goal_clearance: 0.25
+    speed_limit: 0.30
+    # 空白图 bootstrap：经 /cmd_vel_auto 发布低速原地旋转，再由 cmd_vel_gate 限速/scan/estop 门控。
+    bootstrap_enabled: true
+    bootstrap_angular: 0.4
+    bootstrap_duration: 6.0
+    bootstrap_timeout: 8.0
+    bootstrap_max_attempts: 3
+    bootstrap_interval: 2.0
+    use_sim_time: false
+
+cmd_vel_gate:
+  ros__parameters:
+    scan_timeout: 1.0
+    command_timeout: 0.5
+    max_linear: 0.30
+    min_linear: -0.10
+    max_angular: 1.0
+    use_sim_time: false

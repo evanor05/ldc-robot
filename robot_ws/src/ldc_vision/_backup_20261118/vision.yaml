@@ -1,0 +1,16 @@
+ldc_detector:
+  ros__parameters:
+    device: '0'  # cpu 必须显式选择；GPU 故障不自动降级
+    imgsz: 640
+    confidence: 0.25
+    gateway_port: 18320
+    class_filter: all
+    tracking_enabled: true
+    track_confirm_frames: 2
+    track_max_missed: 3
+    track_min_score: 0.35
+    track_iou_threshold: 0.3
+    # 交通灯判色：opencv（当前仅通用权重）/ yolo（需三色权重）/ consensus（双路都绿才放行）
+    color_mode: opencv
+    # 三色权重标签不规则时的精确覆盖，形如 '{"red light":"red","green_light":"green"}'
+    color_label_map: ''

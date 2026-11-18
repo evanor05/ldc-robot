@@ -1,0 +1,20 @@
+ldc_detector:
+  ros__parameters:
+    device: '0'  # cpu 必须显式选择；GPU 故障不自动降级
+    # 三色交通灯权重（competition_v2, nc=5: red/green/yellow/off/stop_sign）
+    # 旧的通用权重回滚方式：model_path 指向 yolo26n.pt + color_mode: opencv
+    model_path: /home/<user>/.local/share/ldc/models/traffic26n.pt
+    imgsz: 640
+    confidence: 0.25
+    gateway_port: 18320
+    class_filter: all
+    tracking_enabled: true
+    track_confirm_frames: 2
+    track_max_missed: 3
+    track_min_score: 0.35
+    track_iou_threshold: 0.3
+    # 交通灯判色：yolo（三色权重直接用标签灯色，当前）/ opencv（按像素判色）/ consensus（双路都绿才放行）
+    color_mode: yolo
+    # 标签不规则时的精确覆盖，形如 '{"red light":"red","green_light":"green"}'
+    # 当前权重的裸类名已能自动识别，无需配置
+    color_label_map: ''

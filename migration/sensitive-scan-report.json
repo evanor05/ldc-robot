@@ -1,0 +1,9 @@
+{
+  "counts": {
+    "text_files": 11189,
+    "binary_assets": 114,
+    "known_literals_checked": 7
+  },
+  "findings": [],
+  "limits": "Heuristic scan is not proof of no secrets. Binary model/image assets not decoded. No auth stores opened. Exact known source literals only kept in process memory."
+}

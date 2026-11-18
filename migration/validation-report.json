@@ -1,0 +1,92 @@
+{
+  "counts": {
+    "xml_passed": 178,
+    "python_passed": 372,
+    "json_passed": 88,
+    "xml_failed": 2,
+    "shell_passed": 27,
+    "python_failed": 6,
+    "json_failed": 5
+  },
+  "issues": [
+    {
+      "path": "microros_ws/src/micro-ROS-Agent/micro_ros_agent/resource/StaticValues.xml",
+      "kind": "xml",
+      "error_type": "ParseError",
+      "line": null
+    },
+    {
+      "path": "microros_ws/src/micro-ROS-Agent/micro_ros_agent/resource/rclcpp.xml",
+      "kind": "xml",
+      "error_type": "ParseError",
+      "line": null
+    },
+    {
+      "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googletest/scripts/gen_gtest_pred_impl.py",
+      "kind": "python",
+      "error_type": "SyntaxError",
+      "line": 307
+    },
+    {
+      "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googletest/scripts/pump.py",
+      "kind": "python",
+      "error_type": "SyntaxError",
+      "line": 249
+    },
+    {
+      "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googletest/scripts/release_docs.py",
+      "kind": "python",
+      "error_type": "SyntaxError",
+      "line": 130
+    },
+    {
+      "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googletest/scripts/upload.py",
+      "kind": "python",
+      "error_type": "SyntaxError",
+      "line": 381
+    },
+    {
+      "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googlemock/scripts/fuse_gmock_files.py",
+      "kind": "python",
+      "error_type": "SyntaxError",
+      "line": 235
+    },
+    {
+      "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googlemock/scripts/upload.py",
+      "kind": "python",
+      "error_type": "SyntaxError",
+      "line": 381
+    },
+    {
+      "path": "lichtblick/tsconfig.eslint.json",
+      "kind": "json",
+      "error_type": "JSONDecodeError",
+      "line": 1
+    },
+    {
+      "path": "lichtblick/tsconfig.json",
+      "kind": "json",
+      "error_type": "JSONDecodeError",
+      "line": 1
+    },
+    {
+      "path": "lichtblick/.vscode/extensions.json",
+      "kind": "json",
+      "error_type": "JSONDecodeError",
+      "line": 1
+    },
+    {
+      "path": "lichtblick/.vscode/launch.json",
+      "kind": "json",
+      "error_type": "JSONDecodeError",
+      "line": 1
+    },
+    {
+      "path": "lichtblick/.vscode/settings.json",
+      "kind": "json",
+      "error_type": "JSONDecodeError",
+      "line": 1
+    }
+  ],
+  "limits": "Syntax only; no ROS/ESP-IDF/Node builds, no dependency installation. JSONC and intentionally malformed fixtures can fail strict parsers."
+}

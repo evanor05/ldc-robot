@@ -1,0 +1,88 @@
+{
+    "tasks": {
+        "startup": [
+            {
+                "id": "foxglove",
+                "description": "Foxglove 数据桥接 (高带宽模式)",
+                "command": "ros2",
+                "args": [
+                    "run",
+                    "foxglove_bridge",
+                    "foxglove_bridge",
+                    "--ros-args",
+                    "-p",
+                    "include_hidden:=false",
+                    "-p",
+                    "send_buffer_limit:=100000000",
+                    "-p",
+                    "num_threads:=4",
+                    "-p",
+                    "max_qos_depth:=10",
+                    "-p",
+                    "min_qos_depth:=10",
+                    "-p",
+                    "capabilities:=[connectionGraph]",
+                    "-p",
+                    "topic_whitelist:=['^/(scan|odom|map|global_costmap/costmap|plan|tf|tf_static|battery_state|imu)$']"
+                ],
+                "delay": 0
+            }
+        ],
+        "mapping": [
+            {
+                "id": "gmapping",
+                "description": "建图（手动 GMapping / 自动探索）",
+                "command": "bash",
+                "args": [
+                    "../scripts/start_mapping_task.sh"
+                ],
+                "delay": 0
+            }
+        ],
+        "navigation": [
+            {
+                "id": "nav2",
+                "description": "Nav2 导航栈 (AMCL + 路径规划)",
+                "command": "ros2",
+                "args": [
+                    "launch",
+                    "ldc_navigation",
+                    "navigation2.launch.py"
+                ],
+                "delay": 0
+            }
+        ]
+    },
+    "save_map": {
+        "command": "ros2",
+        "args": [
+            "run",
+            "nav2_map_server",
+            "map_saver_cli",
+            "-f"
+        ],
+        "description": "保存地图（-f 后追加地图名和路径）",
+        "save_dir": "../maps",
+        "min_occupied_cells": 2500,
+        "max_unknown_ratio": 0.85,
+        "min_mapping_ms": 10000
+    },
+    "maps_dir": "../maps",
+    "camera": {
+        "stream_url": ""
+    },
+    "topics": {
+        "cmd_vel": "/cmd_vel",
+        "battery": "/battery_state",
+        "map": "/map",
+        "costmap": "/global_costmap/costmap",
+        "scan": "/scan",
+        "tf": "/tf",
+        "odom": "/odom",
+        "plan": "/plan",
+        "goal_pose": "/goal_pose",
+        "initial_pose": "/initialpose",
+        "navigate_feedback": "/navigate_to_pose/_action/feedback",
+        "imu": "/imu"
+    }
+}

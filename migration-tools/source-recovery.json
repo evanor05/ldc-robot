@@ -1,0 +1,97 @@
+{
+  "reason": "Baseline mirror excluded all log directories, including required upstream source. Only these missing paths were restored, from matched upstream revisions.",
+  "sources": [
+    {
+      "repository": "https://github.com/ros-perception/openslam_gmapping",
+      "tag": "0.1.2",
+      "commit": "c716f0192131029b31a49554f8c11353d29819a5",
+      "restored_files": [
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/include/gmapping/log/configuration.h",
+          "sha256": "509c4b4e73845660b86e9c73f25bfea8ce77662f59699eedafbc5bd564b5c9e1"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/include/gmapping/log/sensorlog.h",
+          "sha256": "5f59f43de513f11c904a57dab880762a98cfeb266c22779fd9b7b74f4c9c0561"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/Makefile",
+          "sha256": "2ed5ff1a20775a7421c574b4fa6a66912e96744cfb6bea204ea0d681851b0824"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/carmenconfiguration.cpp",
+          "sha256": "014c08cc02bd5fc077d4e254023fc6004ae06ffae74c9087e407c29106909628"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/carmenconfiguration.h",
+          "sha256": "8a9b1a471d30ed69656c1c413f060ac08854dfec4a393e5e896cc2f6398cd45f"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/configuration.cpp",
+          "sha256": "b36096e9775ddec3a9580061e0aeb696d285a2e32681666cd6c6851d248ddc67"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/log_plot.cpp",
+          "sha256": "8a4d51f36382aaf7b63254b15ae5342958426f1c0ada349bc5ea27d8663e2577"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/log_test.cpp",
+          "sha256": "7eea203f699262d6c57fedfa5ae2ecdcdfefc2c7aa44f3c5074e6cbfbe401a53"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/rdk2carmen.cpp",
+          "sha256": "854239674ecb7fa64a3ae989a984d39b53b43d2531f382a766613fe6a391b5a4"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/scanstudio2carmen.cpp",
+          "sha256": "c9b344519d041cd617b53137e900e3bd70786fdc25ae85cb33e06f5f91dc848c"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/sensorlog.cpp",
+          "sha256": "c03b70fa725ac8156f95d260880627856a7e07ef552f446cecb294e88726930e"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/sensorstream.cpp",
+          "sha256": "c8be2bd9087d2232152e1b2882815cd929ccc9519f2b25ae4a815c9611aaed29"
+        },
+        {
+          "path": "xuegeros_ws/src/openslam_gmapping/log/sensorstream.h",
+          "sha256": "d88aeb75a801bca277c7d18729c8a4e5c9b441e7144b882f67c6c5861c79f778"
+        }
+      ],
+      "comparison": [
+        {
+          "path": "include/gmapping/gridfastslam/gridslamprocessor.h",
+          "identical_to_upstream_tag": true
+        },
+        {
+          "path": "scanmatcher/scanmatcherprocessor.h",
+          "identical_to_upstream_tag": true
+        },
+        {
+          "path": "scanmatcher/scanmatcherprocessor.cpp",
+          "identical_to_upstream_tag": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eProsima/Micro-XRCE-DDS-Client",
+      "tag": "v2.4.2",
+      "commit": "0c6743ffa358f26ca9433e951c534ec2f96be37a",
+      "restored_files": [
+        {
+          "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_src/src/Micro-XRCE-DDS-Client/src/c/core/log/log_internal.h",
+          "sha256": "95f71a03f41afd6fd7d48930ec96b1ee98debe436e8243c67c0379cb5837be47"
+        },
+        {
+          "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_src/src/Micro-XRCE-DDS-Client/src/c/core/log/log.c",
+          "sha256": "d4c77e8f776b6ecc9406b6deb1b339f7ffc75897d762c82969abadd1c9735362"
+        }
+      ],
+      "comparison": {
+        "path": "src/c/core/session/session.c",
+        "identical_to_v2_4_2": true
+      }
+    }
+  ]
+}

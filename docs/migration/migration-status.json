@@ -1,0 +1,14 @@
+{
+  "overall": "IN_PROGRESS_NOT_COMPLETE",
+  "source_mirror": "SANITIZED_VALIDATED",
+  "original_user_archive": "PASS_295671_ENTRIES_SOURCE_STABLE_CONTENT_UID_GID_MODE_SYMLINK_CHECKED",
+  "docker": "IMAGES_TWO_CONTAINERS_AND_OFFLINE_RAW_BACKUP_CREATED",
+  "release_upload": "IN_PROGRESS_FIRST_512MIB_PART_CONFIRMED_REMOTE",
+  "vehicle_flash_nvs": "NOT_READ_FROM_HARDWARE",
+  "key": "LOCAL_ONLY_NEVER_UPLOAD",
+  "limitations": [
+    "Four listed Docker containers cannot be inspected; their raw daemon data was preserved, but external bind mounts remain unverified.",
+    "Vehicle Flash/NVS not read. Preserve original VM."
+  ],
+  "release_tag": "baseline-20261019"
+}

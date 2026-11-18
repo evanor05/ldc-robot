@@ -1,0 +1,8 @@
+{
+  "sources": [
+    {"name":"micro-ROS-Agent", "repo":"micro-ROS/micro-ROS-Agent", "commit":"8cf77415e64a9a95ace719f14a020b7a0745e19e", "sha256":"1df843184380c22abca5081209061e287e9a9e6cbff27d996487e793ebd49e01", "archive":"agent.tar.gz", "destination":"lyrical-src/agent"},
+    {"name":"micro_ros_msgs", "repo":"micro-ROS/micro_ros_msgs", "commit":"a7921c15229beab8b066c117f81d5d8f75e0c014", "sha256":"c4a5009532afcb5c52e25549e3d07a31ddedf9a477253bf1d4db0da56673c1e0", "archive":"msgs.tar.gz", "destination":"lyrical-src/micro_ros_msgs"},
+    {"name":"Micro-XRCE-DDS-Agent v3.0.2", "repo":"eProsima/Micro-XRCE-DDS-Agent", "commit":"a88c712b41a01e92583f4723f7f4f686863cf657", "sha256":"c5060063cd7bb4885c3096a7367001c07b921e5a78776f340a4b20cb11ad61b3", "archive":"xrce.tar.gz", "destination":".deps/src/xrce"},
+    {"name":"spdlog v1.9.2", "repo":"gabime/spdlog", "commit":"eb3220622e73a4889eee355ffa37972b3cac3df5", "sha256":"c60cd3742d24c3f8014618ea7e54c7fa3d5fb3886cfd59281101e6f5058dfcc5", "archive":"spdlog.tar.gz", "destination":".deps/src/spdlog"}
+  ]
+}

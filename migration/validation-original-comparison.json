@@ -1,0 +1,67 @@
+[
+  {
+    "path": "microros_ws/src/micro-ROS-Agent/micro_ros_agent/resource/StaticValues.xml",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "microros_ws/src/micro-ROS-Agent/micro_ros_agent/resource/rclcpp.xml",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googletest/scripts/gen_gtest_pred_impl.py",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googletest/scripts/pump.py",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googletest/scripts/release_docs.py",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googletest/scripts/upload.py",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googlemock/scripts/fuse_gmock_files.py",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "leap_demo/leap_ros_mcu_driver/managed_components/micro_ros_espidf_component/micro_ros_dev/src/googletest/googlemock/scripts/upload.py",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "lichtblick/tsconfig.eslint.json",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "lichtblick/tsconfig.json",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "lichtblick/.vscode/extensions.json",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "lichtblick/.vscode/launch.json",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  },
+  {
+    "path": "lichtblick/.vscode/settings.json",
+    "original_also_fails_same_parser": true,
+    "copy_identical_to_original": true
+  }
+]
